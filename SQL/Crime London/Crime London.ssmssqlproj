@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Crime London">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="KG_TRAINING29\KUBRICK:KG_Training29\Student29">
+          <Created>2016-11-16T16:07:56.7298024+00:00</Created>
+          <Type>SQL</Type>
+          <Server>KG_TRAINING29\KUBRICK</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>Crime</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="alter_DimFullPopulation_AddPercentagePerAgeBracket.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>alter_DimFullPopulation_AddPercentagePerAgeBracket.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Bucketing-ages-in-pop.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Bucketing-ages-in-pop.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-Crime-ID-Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-Crime-ID-Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-CrimeType-ID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-CrimeType-ID.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-DimDate.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-DimDate.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-DimFullPopulation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-DimFullPopulation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-DimGeography.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-DimGeography.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-DimLocation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-DimLocation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-DimSalary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-DimSalary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-FullPopulation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-FullPopulation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-PolStationLocation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-PolStationLocation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Create-view-crime.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Create-view-crime.sql</FullPath>
+        </FileNode>
+        <FileNode Name="important full pop.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>important full pop.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Table-sizes-comparison.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Table-sizes-comparison.sql</FullPath>
+        </FileNode>
+        <FileNode Name="test-linking.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>test-linking.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_assaultoccurence_byseason.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_assaultoccurence_byseason.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_CrimeCategoriesOccurenceperYear.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_CrimeCategoriesOccurenceperYear.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_DimPopulationWithLongLat.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_DimPopulationWithLongLat.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_gender-percentage-per-year-per-AreaName.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_gender-percentage-per-year-per-AreaName.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_meanmedianSalary.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_meanmedianSalary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_orderedSexualAssaults-allyear.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_orderedSexualAssaults-allyear.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_PercentagePerAgePerGender.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_PercentagePerAgePerGender.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_sexualassaults-map-restricted.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_sexualassaults-map-restricted.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_top10sexualAssaults.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_top10sexualAssaults.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_top10SexualAssaults_2013.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_top10SexualAssaults_2013.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_top10SexualAssaults_2014.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_top10SexualAssaults_2014.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_top10SexualAssaults_2015.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_top10SexualAssaults_2015.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vw_withpivot_crimecategoriesperyear.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KG_TRAINING29\KUBRICK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KG_TRAINING29\KUBRICK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>vw_withpivot_crimecategoriesperyear.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

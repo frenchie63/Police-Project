@@ -1,0 +1,1745 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/23/2016 8:37:20 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="KG_TRAINING29"
+  DTS:CreatorName="KG_Training29\Student29"
+  DTS:DTSID="{F7799549-773C-41AB-A642-C79C8FE5EB65}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.5000.0"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Mean-salary-load"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{AB2BB755-6725-41AF-9B35-F096035A88B4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FFCM Loading Mean Salary]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1A98AF50-D7A4-410D-8C23-D1BDD78014F5}"
+      DTS:ObjectName="FFCM Loading Mean Salary">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data\Police Crime\Data\Additional Data\modelled-household-income-estimates-lsoa.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Code"
+              DTS:DTSID="{97816475-EBE5-4728-973E-ADCF9B763137}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{4F4EEA01-8A0B-481C-8C57-66252A09930D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAD code"
+              DTS:DTSID="{5933F214-E09A-4B2D-BB7F-3FCC26457044}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Borough"
+              DTS:DTSID="{2929F040-75BE-4CCE-9821-AFA7CF4986D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2001 02"
+              DTS:DTSID="{537E3B31-D88B-4679-AFDF-2E75BCCD391C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2002 03"
+              DTS:DTSID="{9CD8FCA0-220C-4F57-89CE-D787FEA3C824}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2003 04"
+              DTS:DTSID="{0C001A1B-9FCC-49DD-99B9-89B3F010565C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2004 05"
+              DTS:DTSID="{4CC95177-C617-4181-8F0E-1B3FFFEFB8A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2005 06"
+              DTS:DTSID="{54756A8E-C609-430E-842A-DFD7DC034601}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2006 07"
+              DTS:DTSID="{7BD1DE3D-CFE1-49AD-9ADC-B561696FB67B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2007 08"
+              DTS:DTSID="{3A85D2FB-E124-4E11-A3E6-2D3594DE4AB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2008 09"
+              DTS:DTSID="{F5680435-5963-4DD6-A3DF-EC30B634977F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2009 10"
+              DTS:DTSID="{2B1F5AA7-A09B-4E30-AC11-B3AE2B6CD356}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2010 11"
+              DTS:DTSID="{DF85A4CD-8E62-4E05-93F1-2E96E646FFDA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2011 12"
+              DTS:DTSID="{5F60C924-7627-470F-8535-D1F8386EBFCC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mean 2012 13"
+              DTS:DTSID="{8D521F5B-2C77-456A-92C3-CC5366C5A399}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2001 02"
+              DTS:DTSID="{60376757-B122-4AD9-B9AE-E58BE6961BCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2002 03"
+              DTS:DTSID="{6CC47F79-8761-4025-8899-83FAADE4B15B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2003 04"
+              DTS:DTSID="{578513FC-CBB7-4083-AE35-0395D519D2B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2004 05"
+              DTS:DTSID="{10DA95A1-BDDD-486C-95C9-0254D1BD208A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2005 06"
+              DTS:DTSID="{5C1EE08C-9E6F-415D-87DD-0DD00DD4F4DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2006 07"
+              DTS:DTSID="{82E99538-A205-415B-BB3F-64336065938B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2007 08"
+              DTS:DTSID="{A565CECD-C165-4DBE-867C-28C88F315695}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2008 09"
+              DTS:DTSID="{BFA619F8-72EA-4BA9-ACCE-E8ADACB7C3CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2009 10"
+              DTS:DTSID="{EAAE3B08-792F-42EB-BDCA-0B0B63000C1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2010 11"
+              DTS:DTSID="{2F0685F2-2E21-4EF0-BB42-E1184801B437}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2011 12"
+              DTS:DTSID="{30315559-A94C-4462-8A38-B268951A725A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Median 2012 13"
+              DTS:DTSID="{7383193C-8F8B-494D-81B2-C622DA947A63}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[KG_TRAINING29\KUBRICK.Crime]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5B01531C-AD8B-4D04-9AA0-0185C86587FA}"
+      DTS:ObjectName="KG_TRAINING29\KUBRICK.Crime">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=KG_TRAINING29\KUBRICK;Initial Catalog=Crime;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{42B5FCE6-95AD-4C05-A4E8-3534941999B0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\FFS Mean Salary"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="FFS Mean Salary"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\FFS Mean Salary.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FFCM Loading Mean Salary]"
+                  connectionManagerRefId="Package.ConnectionManagers[FFCM Loading Mean Salary]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Code]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Code]"
+                      name="Code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[LAD code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[LAD code]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[LAD code]"
+                      name="LAD code"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Borough]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Borough]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Borough]"
+                      name="Borough"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2001 02]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2001 02]"
+                      name="Mean 2001 02"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2002 03]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2002 03]"
+                      name="Mean 2002 03"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2003 04]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2003 04]"
+                      name="Mean 2003 04"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2004 05]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2004 05]"
+                      name="Mean 2004 05"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2005 06]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2005 06]"
+                      name="Mean 2005 06"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2006 07]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2006 07]"
+                      name="Mean 2006 07"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2007 08]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2007 08]"
+                      name="Mean 2007 08"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2008 09]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2008 09]"
+                      name="Mean 2008 09"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2009 10]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2009 10]"
+                      name="Mean 2009 10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2010 11]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2010 11]"
+                      name="Mean 2010 11"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2011 12]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2011 12]"
+                      name="Mean 2011 12"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2012 13]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2012 13]"
+                      name="Mean 2012 13"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2001 02]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2001 02]"
+                      name="Median 2001 02"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2002 03]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2002 03]"
+                      name="Median 2002 03"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2003 04]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2003 04]"
+                      name="Median 2003 04"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2004 05]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2004 05]"
+                      name="Median 2004 05"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2005 06]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2005 06]"
+                      name="Median 2005 06"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2006 07]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2006 07]"
+                      name="Median 2006 07"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2007 08]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2007 08]"
+                      name="Median 2007 08"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2008 09]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2008 09]"
+                      name="Median 2008 09"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2009 10]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2009 10]"
+                      name="Median 2009 10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2010 11]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2010 11]"
+                      name="Median 2010 11"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2011 12]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2011 12]"
+                      name="Median 2011 12"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2012 13]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2012 13]"
+                      name="Median 2012 13"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[LAD code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LAD code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Borough]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Borough" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2001 02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2002 03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2003 04" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2004 05" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2005 06" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2006 07" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2007 08" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2008 09" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2009 10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2010 11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2011 12" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Mean 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2012 13" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2001 02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2002 03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2003 04" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2004 05" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2005 06" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2006 07" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2007 08" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2008 09" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2009 10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2010 11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2011 12" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].ExternalColumns[Median 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2012 13" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[MeanSalary]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[KG_TRAINING29\KUBRICK.Crime]"
+                  connectionManagerRefId="Package.ConnectionManagers[KG_TRAINING29\KUBRICK.Crime]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Code"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Code]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Code]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LAD code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LAD code"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LAD code]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[LAD code]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Borough]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Borough"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Borough]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Borough]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2001 02]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2001 02"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2001 02]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2001 02]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2002 03]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2002 03"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2002 03]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2002 03]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2003 04]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2003 04"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2003 04]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2003 04]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2004 05]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2004 05"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2004 05]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2004 05]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2005 06]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2005 06"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2005 06]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2005 06]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2006 07]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2006 07"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2006 07]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2006 07]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2007 08]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2007 08"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2007 08]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2007 08]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2008 09]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2008 09"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2008 09]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2008 09]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2009 10]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2009 10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2009 10]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2009 10]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2010 11]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2010 11"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2010 11]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2010 11]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2011 12]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2011 12"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2011 12]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2011 12]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Mean 2012 13]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mean 2012 13"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2012 13]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Mean 2012 13]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2001 02]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2001 02"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2001 02]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2001 02]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2002 03]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2002 03"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2002 03]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2002 03]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2003 04]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2003 04"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2003 04]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2003 04]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2004 05]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2004 05"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2004 05]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2004 05]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2005 06]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2005 06"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2005 06]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2005 06]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2006 07]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2006 07"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2006 07]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2006 07]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2007 08]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2007 08"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2007 08]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2007 08]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2008 09]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2008 09"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2008 09]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2008 09]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2009 10]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2009 10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2009 10]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2009 10]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2010 11]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2010 11"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2010 11]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2010 11]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2011 12]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2011 12"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2011 12]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2011 12]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Median 2012 13]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Median 2012 13"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2012 13]"
+                      lineageId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output].Columns[Median 2012 13]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LAD code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LAD code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Borough]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Borough" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2001 02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2002 03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2003 04" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2004 05" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2005 06" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2006 07" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2007 08" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2008 09" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2009 10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2010 11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2011 12" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mean 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mean 2012 13" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2001 02]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2001 02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2002 03]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2002 03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2003 04]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2003 04" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2004 05]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2004 05" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2005 06]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2005 06" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2006 07]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2006 07" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2007 08]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2007 08" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2008 09]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2008 09" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2009 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2009 10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2010 11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2010 11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2011 12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2011 12" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Median 2012 13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Median 2012 13" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\FFS Mean Salary.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Data Flow Task"
+          TopLeft="328.5,102.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Data Flow Task\FFS Mean Salary"
+          TopLeft="390,188" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="381,281" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="468.5,230">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
